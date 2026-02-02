@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaan Puri Hero Recreation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .dot-pattern {
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        /* Custom scrollbar for the mock UI */
+        .mock-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        .mock-scroll::-webkit-scrollbar-thumb {
+            background-color: #e2e8f0;
+            border-radius: 3px;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gray: {
+                            50: '#f9fafb',
+                            100: '#f3f4f6',
+                            200: '#e5e7eb',
+                            300: '#d1d5db',
+                            400: '#9ca3af',
+                            500: '#6b7280',
+                            600: '#4b5563',
+                            700: '#374151',
+                            800: '#1f2937',
+                            900: '#111827',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-black text-white text-xs font-medium py-2.5 px-4 flex justify-center items-center relative">
+        <a href="#" class="flex items-center gap-1 hover:text-gray-300 transition-colors">
+            Join 109K+ subscribers reading Shaan's weekly business essays
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <button class="absolute right-4 text-gray-400 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="border-b border-gray-100 sticky top-0 z-50 bg-white/95 backdrop-blur-sm">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <!-- Logo & Links -->
+            <div class="flex items-center gap-8">
+                <a href="#" class="flex items-center gap-2">
+                    <!-- Shaan Puri Logo SVG -->
+                    <svg width="85" height="24" viewBox="0 0 85 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.9091 0L5.45455 9.6H16.3636L10.9091 0Z" fill="#111827"/>
+                        <path d="M5.45456 9.6L0 19.2H10.9091L16.3637 9.6H5.45456Z" fill="#111827"/>
+                        <path d="M16.3636 9.6L10.9091 19.2H21.8182L16.3636 9.6Z" fill="#111827"/>
+                        <path d="M33.5 19.2V10.8H31.1V19.2H28.7V10.8H26.3V8.4H28.7V5.4H31.1V8.4H33.5V5.4H35.9V8.4H38.3V10.8H35.9V19.2H33.5Z" fill="#111827"/>
+                        <path d="M43.1 19.2V10.8H40.7V19.2H38.3V10.8H35.9V8.4H38.3V5.4H40.7V8.4H43.1V5.4H45.5V8.4H47.9V10.8H45.5V19.2H43.1Z" fill="#111827"/>
+                        <path d="M50.3 5.4H52.7V8.4H50.3V5.4ZM50.3 10.8H52.7V19.2H50.3V10.8Z" fill="#111827"/>
+                        <path d="M62.3 19.4C60.4333 19.4 58.8667 18.7667 57.6 17.5C56.3333 16.2333 55.7 14.6667 55.7 12.8C55.7 10.9333 56.3333 9.36667 57.6 8.1C58.8667 6.83333 60.4333 6.2 62.3 6.2C64.1667 6.2 65.7333 6.83333 67 8.1C68.2667 9.36667 68.9 10.9333 68.9 12.8C68.9 14.6667 68.2667 16.2333 67 17.5C65.7333 18.7667 64.1667 19.4 62.3 19.4ZM62.3 17.2C63.5 17.2 64.5 16.8 65.3 16C66.1 15.2 66.5 14.1333 66.5 12.8C66.5 11.4667 66.1 10.4 65.3 9.6C64.5 8.8 63.5 8.4 62.3 8.4C61.1 8.4 60.1 8.8 59.3 9.6C58.5 10.4 58.1 11.4667 58.1 12.8C58.1 14.1333 58.5 15.2 59.3 16C60.1 16.8 61.1 17.2 62.3 17.2Z" fill="#111827"/>
+                    </svg>
+                </a>
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-[#475569]">
+                    <div class="group relative cursor-pointer flex items-center gap-1 hover:text-gray-900">
+                        Essays
+                        <svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <div class="group relative cursor-pointer flex items-center gap-1 hover:text-gray-900">
+                        Podcast
+                        <svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                    <a href="#" class="hover:text-gray-900">About</a>
+                    <a href="#" class="hover:text-gray-900">Subscribe</a>
+                </div>
+            </div>
+
+            <!-- Auth Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md border border-gray-200 hover:border-gray-300 transition-all">Sign in</a>
+                <a href="#" class="text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 px-4 py-2 rounded-md transition-all shadow-sm">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-16 pb-0">
+        <div class="max-w-4xl mx-auto px-4 text-center flex flex-col items-center">
+            
+            <!-- Badge -->
+            <a href="#" class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-gray-200 bg-white text-xs font-medium text-gray-700 hover:border-gray-300 transition-colors mb-8 shadow-sm">
+                As heard on the My First Million podcast
+                <svg class="w-3 h-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </a>
+
+            <!-- Heading -->
+            <h1 class="text-5xl md:text-[64px] leading-[1.1] font-bold tracking-tight text-gray-900 mb-6">
+                Business wisdom<br>for the long game.
+            </h1>
+
+            <!-- Subheading -->
+            <p class="text-xl text-gray-500 mb-10 max-w-xl mx-auto font-normal">
+                Hard-earned lessons from building, selling, and scaling to 25M+ yearly downloads.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex items-center gap-3 mb-20">
+                <a href="#" class="text-base font-medium text-white bg-gray-900 hover:bg-gray-800 px-5 py-3 rounded-lg transition-all shadow-sm">Read the essays</a>
+                <a href="#" class="text-base font-medium text-gray-700 bg-white border border-gray-200 hover:bg-gray-50 px-5 py-3 rounded-lg transition-all shadow-sm">Listen to the podcast</a>
+            </div>
+
+        </div>
+
+        <!-- Tabs -->
+        <div class="border-b border-gray-200 w-full">
+            <div class="max-w-[1200px] mx-auto grid grid-cols-4 text-center">
+                <div class="py-4 text-sm font-medium text-gray-500 cursor-pointer hover:text-gray-900 border-b-2 border-transparent">Stories</div>
+                <div class="py-4 text-sm font-medium text-gray-900 cursor-pointer border-b-2 border-gray-900">Lessons</div>
+                <div class="py-4 text-sm font-medium text-gray-500 cursor-pointer hover:text-gray-900 border-b-2 border-transparent">Frameworks</div>
+                <div class="py-4 text-sm font-medium text-gray-500 cursor-pointer hover:text-gray-900 border-b-2 border-transparent">Systems</div>
+            </div>
+        </div>
+
+        <!-- UI Mockup Area -->
+        <div class="bg-gray-50 pt-10 pb-20 px-4 overflow-hidden">
+            <div class="max-w-[1200px] mx-auto bg-white rounded-xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] border border-gray-200 overflow-hidden flex h-[600px]">
+                
+                <!-- Sidebar -->
+                <div class="w-[240px] border-r border-gray-100 bg-white flex flex-col flex-shrink-0">
+                    <!-- Workspace Selector -->
+                    <div class="h-14 flex items-center px-4 border-b border-gray-100">
+                        <button class="flex items-center gap-2 text-sm font-semibold text-gray-900 w-full hover:bg-gray-50 p-1 -ml-1 rounded">
+                            <div class="w-5 h-5 bg-gray-900 rounded text-white flex items-center justify-center text-[10px]">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            Shaan Puri
+                            <svg class="w-3.5 h-3.5 text-gray-400 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <button class="ml-2 text-gray-400 hover:text-gray-600">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="p-3">
+                        <div class="flex items-center gap-2 px-2 py-1.5 bg-white border border-gray-200 rounded-md shadow-sm text-xs text-gray-500 cursor-text hover:border-gray-300 transition-colors">
+                            <div class="w-4 h-4 border border-gray-300 rounded flex items-center justify-center bg-gray-50">
+                                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                            </div>
+                            <span class="font-medium text-gray-700">Quick actions</span>
+                            <span class="ml-auto text-[10px] border border-gray-200 rounded px-1 bg-gray-50">⌘K</span>
+                            <div class="h-3 w-[1px] bg-gray-200 mx-1"></div>
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            <span class="text-[10px] border border-gray-200 rounded px-1.5 bg-gray-50">/</span>
+                        </div>
+                    </div>
+
+                    <!-- Nav Items -->
+                    <div class="flex-1 overflow-y-auto py-1 px-2 space-y-0.5">
+                        <a href="#" class="flex items-center gap-2.5 px-2 py-1.5 text-sm text-gray-600 rounded-md hover:bg-gray-50">
+                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                            Recent Essays
+                        </a>
+                        <a href="#" class="flex items-center gap-2.5 px-2 py-1.5 text-sm text-gray-600 rounded-md hover:bg-gray-50">
+                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Playbooks
+                        </a>
+                        <a href="#" class="flex items-center gap-2.5 px-2 py-1.5 text-sm text-gray-600 rounded-md hover:bg-gray-50">
+                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            Podcasts
+                        </a>
+                        <a href="#" class="flex items-center gap-2.5 px-2 py-1.5 text-sm text-gray-600 rounded-md hover:bg-gray-50">
+                            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            Archive
+                        </a>
+                        <a href="#" class="flex items-center gap-2.5 px-2 py-1.5 text-sm text-gray-900 font-medium bg-gray-100 rounded-md">
+                            <svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Systems
+                            <svg class="w-3 h-3 ml-auto text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="flex-1 flex flex-col relative">
+                    
+                    <!-- Header -->
+                    <div class="h-14 border-b border-gray-100 flex items-center justify-between px-6 bg-white z-10">
+                        <div class="flex items-center gap-2 text-sm">
+                            <span class="text-gray-500 flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                Workflows
+                            </span>
+                            <span class="text-gray-300">/</span>
+                            <span class="font-medium text-gray-900">How to build an audience from zero</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex -space-x-2">
+                                <img src="https://placehold.co/32x32/3b82f6/ffffff?text=J" alt="User" class="w-8 h-8 rounded-full border-2 border-white">
+                                <img src="https://placehold.co/32x32/f59e0b/ffffff?text=A" alt="User" class="w-8 h-8 rounded-full border-2 border-white">
+                            </div>
+                            <button class="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                                Share
+                            </button>
+                            <button class="text-gray-400 hover:text-gray-600">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Toolbar -->
+                    <div class="h-12 border-b border-gray-100 flex items-center justify-between px-6 bg-white z-10">
+                        <div class="flex items-center gap-4">
+                            <button class="text-sm font-medium text-gray-500 hover:text-gray-900 flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                Content
+                            </button>
+                            <button class="text-sm font-medium text-gray-900 bg-gray-100 px-3 py-1 rounded-md flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                Views
+                                <span class="bg-white px-1.5 py-0.5 rounded text-xs text-gray-500 border border-gray-200">70</span>
+                            </button>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-2 bg-emerald-50 text-emerald-600 px-2 py-1 rounded-full text-xs font-medium border border-emerald-100">
+                                <span class="w-2 h-2 bg-emerald-500 rounded-full"></span>
+                                Live
+                            </div>
+                            <div class="w-10 h-6 bg-[#3b82f6] rounded-full relative cursor-pointer">
+                                <div class="absolute right-1 top-1 w-4 h-4 bg-white rounded-full shadow-sm"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Canvas Area -->
+                    <div class="flex-1 relative dot-pattern bg-white overflow-hidden">
+                        
+                        <!-- Flow Diagram Elements (Absolute) -->
+                        <div class="absolute left-10 top-10 flex flex-col items-center gap-8">
+                            <!-- Idea Node -->
+                            <div class="bg-white border border-gray-200 rounded-md shadow-sm px-3 py-1.5 flex items-center gap-2 text-xs text-gray-500">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                Trigger
+                            </div>
+                            
+                            <!-- Connecting Line -->
+                            <div class="h-8 w-[1px] bg-gray-300 -my-4"></div>
+
+                            <!-- Action Node -->
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-64 overflow-hidden">
+                                <div class="p-3 flex items-start gap-3">
+                                    <div class="w-8 h-8 bg-blue-50 text-blue-600 rounded flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-1">
+                                            <span class="text-sm font-medium text-gray-900">Ship content</span>
+                                            <span class="text-[10px] bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded">Records</span>
+                                        </div>
+                                        <div class="text-xs text-gray-500">Scale the audience</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Connecting Line -->
+                            <div class="h-8 w-[1px] bg-gray-300 -my-4"></div>
+                            
+                            <!-- Next Node Placeholder -->
+                            <div class="w-64 h-24 border border-dashed border-gray-300 rounded-lg bg-gray-50/50"></div>
+                        </div>
+
+                        <!-- Runs Panel (Overlay on Right) -->
+                        <div class="absolute top-0 right-0 bottom-0 w-96 bg-white border-l border-gray-200 shadow-lg flex flex-col">
+                            <!-- Run Item 1 -->
+                            <div class="p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-gray-300 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                                        <span class="text-sm font-medium text-gray-900">Issue #70</span>
+                                        <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded">Run #70</span>
+                                    </div>
+                                    <span class="text-xs text-gray-500">Executing</span>
+                                </div>
+                            </div>
+
+                            <!-- Run Item 2 -->
+                            <div class="p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-4 h-4 bg-emerald-500 rounded-full flex items-center justify-center">
+                                            <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-900">Issue #69</span>
+                                        <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1">
+                                            <span class="font-serif italic">S</span> 15
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-500">Completed just now</span>
+                                </div>
+                            </div>
+
+                            <!-- Run Item 3 -->
+                            <div class="p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-4 h-4 bg-emerald-500 rounded-full flex items-center justify-center">
+                                            <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-900">Issue #68</span>
+                                        <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1">
+                                            <span class="font-serif italic">S</span> 11
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-500">Completed 2 min ago</span>
+                                </div>
+                            </div>
+
+                             <!-- Run Item 4 -->
+                             <div class="p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-4 h-4 bg-emerald-500 rounded-full flex items-center justify-center">
+                                            <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+                                        <span class="text-sm font-medium text-gray-900">Issue #67</span>
+                                        <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded flex items-center gap-1">
+                                            <span class="font-serif italic">S</span> 24
+                                        </span>
+                                    </div>
+                                    <span class="text-xs text-gray-500">Completed 5 min ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
